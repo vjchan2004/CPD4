@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ann Arbor Skyline — Athletes</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header>
+        <input type="checkbox" id="dark-mode-toggle" class="theme-toggle" />
+        <input type="checkbox" id="contrast-toggle" class="theme-toggle" />
+
+        <h1><a href="index.html">Ann Arbor Skyline</a></h1>
+
+        <div class="toggle-bar">
+          <label for="dark-mode-toggle">Dark mode</label>
+          <label for="contrast-toggle">High contrast</label>
+        </div>
+
+        <nav aria-label="Primary navigation">
+          <ul>
+            <li><a href="mainAthletes.html">Athletes</a></li>
+            <li><a href="mainMeets.html">Meets</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <form action="#" method="get">
+          <fieldset>
+            <legend>Search and sort</legend>
+
+            <label for="search">Search</label>
+            <input id="search" name="search" type="search" />
+
+            <label for="sort">Sort</label>
+            <select id="sort" name="sort">
+              <option value="name-asc">Athlete name (A–Z)</option>
+              <option value="name-desc">Athlete name (Z–A)</option>
+            </select>
+
+            <button type="submit">Apply</button>
+          </fieldset>
+        </form>
+
+        <section>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Level</th>
+                  <th scope="col">Athlete Name</th>
+                  <th scope="col">Best Time</th>
+                  <th scope="col">Best Place</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>V</td>
+                  <td><a href="athlete.html">Garrett Comer</a></td>
+                  <td>16:42</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>V</td>
+                  <td>Avery Patel</td>
+                  <td>17:05</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>JV</td>
+                  <td>Sam Nguyen</td>
+                  <td>17:33</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>JV</td>
+                  <td>Taylor Chen</td>
+                  <td>18:10</td>
+                  <td>9</td>
+                </tr>
+                <tr>
+                  <td>V</td>
+                  <td>Riley Johnson</td>
+                  <td>18:44</td>
+                  <td>12</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; Ann Arbor Skyline High School</p>
+      </footer>
+    </div>
+  </body>
+</html>
