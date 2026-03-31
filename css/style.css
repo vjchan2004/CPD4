@@ -173,6 +173,7 @@ th, td {
 
 th {
   background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 tbody tr:nth-child(even) {
@@ -256,10 +257,104 @@ section, table, fieldset, img {
   }
 }
 
+/* tablet (600px and up) */
+@media (min-width: 600px) {
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+  }
+
+  h1 {
+    margin: 0;
+    flex: 1;
+  }
+
+  .toggle-bar {
+    margin-bottom: 0;
+  }
+
+  nav {
+    flex-basis: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  nav li {
+    margin-bottom: 0;
+  }
+
+  fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+  }
+
+  fieldset legend {
+    flex-basis: 100%;
+  }
+
+  fieldset label {
+    margin-bottom: 0;
+  }
+
+  fieldset input,
+  fieldset select {
+    width: auto;
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  fieldset button {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+/* desktop (900px and up) */
+@media (min-width: 900px) {
+  .page {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  nav {
+    flex-basis: auto;
+  }
+
+  .profile-header {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .profile-info {
+    flex: 1;
+  }
+
+  .gallery-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .gallery-list li {
+    margin-bottom: 0;
+  }
+}
+
 /* reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    scroll-behavior: auto !important;
+  section, table, fieldset, img {
+    animation: none;
   }
 }
